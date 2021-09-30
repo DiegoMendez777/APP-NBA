@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
         EditText txtPassword = findViewById(R.id.txtPassword);
         TextView lblLoginResult = findViewById(R.id.lblLoginResult);
 
-
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                if (txtUserName.getText().toString().equals("123")) {
+                if (txtUserName.getText().toString().equals("admin") && txtPassword.getText().toString().equals("admin")) {
+                    lblLoginResult.setText("Loggued in");
                     Log.i("Test", "Login ok");
                 } else {
                     Log.i("Test", "Login ko");
