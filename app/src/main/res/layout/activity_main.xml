@@ -71,14 +71,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="168dp"
-        android:layout_height="143dp"
+        android:layout_width="219dp"
+        android:layout_height="176dp"
         app:layout_constraintBottom_toTopOf="@+id/txtUsername"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.679"
+        app:layout_constraintVertical_bias="0.736"
         tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
