@@ -11,6 +11,7 @@
         <entry key="app/src/main/res/drawable/ic_email_focused.xml" value="0.13425925925925927" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/ic_lock_focused.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.35572916666666665" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
