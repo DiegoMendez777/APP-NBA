@@ -11,48 +11,56 @@
         android:id="@+id/txtUsername"
         android:layout_width="218dp"
         android:layout_height="48dp"
-        android:layout_marginTop="324dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_email_icon"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Username"
+        android:hint="@string/user"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/admin"
+        app:layout_constraintBottom_toTopOf="@+id/txtPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.838"
+        tools:ignore="DuplicateSpeakableTextCheck"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/txtPassword"
         android:layout_width="220dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="376dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_lock_icon"
         android:drawablePadding="12dp"
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
         android:inputType="textPassword"
         android:minHeight="48dp"
         android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/admin"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtUsername"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck,TextContrastCheck,TextContrastCheck" />
 
     <Button
         android:id="@+id/btnSingIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="LOGIN"
+        android:layout_marginTop="76dp"
+        android:text="@string/login"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtPassword"
         app:rippleColor="#F60000" />
@@ -61,25 +69,24 @@
         android:id="@+id/lblLoginResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Not Logged in "
+        android:text="@string/not_logged_in"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSingIn"
-        app:layout_constraintVertical_bias="0.159" />
+        app:layout_constraintVertical_bias="0.485" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgNba"
         android:layout_width="219dp"
         android:layout_height="176dp"
+        android:contentDescription="@string/imagennba"
         app:layout_constraintBottom_toTopOf="@+id/txtUsername"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.763"
-        tools:srcCompat="@drawable/nba_logo_baloncesto_historia_deporte_estados_unidos" />
+        tools:srcCompat="@drawable/nbafoto" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
