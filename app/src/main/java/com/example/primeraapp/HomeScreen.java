@@ -14,14 +14,23 @@ public class HomeScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
-        BottomNavigationView bottomNav = findViewById(R.id.main_menu);
+
+
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
-        ImageButton btnCara = (ImageButton) findViewById(R.id.btnCara);
+        BottomNavigationView bottomNav = findViewById(R.id.main_menu);
+
         bottomNav.setOnItemSelectedListener(item -> {
             Fragment selectedFragment = null;
             switch (item.getItemId()){
                 case R.id.nav_home:
                     selectedFragment = new HomeFragment();
+                    break;
+                case R.id.nav_list:
+                    selectedFragment = new ListFragment();
+                    break;
+
+                case R.id.nav_add:
+                    selectedFragment = new FormFragment();
                     break;
             }
 

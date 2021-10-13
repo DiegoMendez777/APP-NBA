@@ -8,4 +8,6 @@
     <string name="user">user</string>
     <string name="admin">admin</string>
     <string name="imagennba">imagennba</string>
+    <string name="todo">TODO</string>
+    <string name="xd">TODO</string>
 </resources>
