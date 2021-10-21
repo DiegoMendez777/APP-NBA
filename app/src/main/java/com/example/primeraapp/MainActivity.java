@@ -1,7 +1,6 @@
 package com.example.primeraapp;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -10,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,9 +28,8 @@ public class MainActivity extends AppCompatActivity {
         EditText txtPassword = findViewById(R.id.txtPassword);
         /*declaration id Label*/
         TextView lblLoginResult = findViewById(R.id.lblLoginResult);
-
+        /*declaration picture LOGO NBA */
         ImageView imgNba = findViewById(R.id.imgNba);
-        /*declaration picture*/
         /*declaration when button is clicked*/
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             /*This checks if you log in with the user "admin" and password "admin", the label will tell you if you have logged in correctly*/
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     Log.i("Test", "Login ko");/*if the interaction with the click does not work you will see a ko in the log*/
                 }
+
             }
         });
     }
