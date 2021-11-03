@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Primeraapp">
         <activity
+            android:name=".DB.ContactsDBHelper"
+            android:exported="false" />
+        <activity
             android:name=".HomeScreen"
             android:exported="true" />
         <activity

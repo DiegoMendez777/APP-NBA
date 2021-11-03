@@ -2,6 +2,7 @@ package com.example.primeraapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -10,12 +11,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.primeraapp.DB.ContactsDBHelper;
 
 
 public class MainActivity extends AppCompatActivity {
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,9 +28,13 @@ public class MainActivity extends AppCompatActivity {
         /*declaration id Label*/
         TextView lblLoginResult = findViewById(R.id.lblLoginResult);
         /*declaration picture LOGO NBA */
-        ImageView imgNba = findViewById(R.id.imgNba);
+        ImageView imgNba = (ImageView) findViewById(R.id.imgNba);
+
+
         /*declaration when button is clicked*/
         btnSignIn.setOnClickListener(new View.OnClickListener() {
+
+
             /*This checks if you log in with the user "admin" and password "admin", the label will tell you if you have logged in correctly*/
             public void onClick(View v) {
                 if (txtUserName.getText().toString().equals("admin") && txtPassword.getText().toString().equals("admin")) {
